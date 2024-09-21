@@ -1,4 +1,7 @@
-## sumayasa tutorial
+## Library Book (Sumayasa)
+This is a Project School
+
+## Sumayasa Tutorial
 
 - Clone the repo: git clone https://github.com/evelynn30/sumayasa.git
 - Use XAMPP or Laragon
