@@ -1,0 +1,126 @@
+
+  /*-----------------------------------*\
+    #FOOTER
+  \*-----------------------------------*/
+  
+  .footer-top { border-block-end: 1px solid var(--granite-gray); }
+  
+  .footer-top .container { gap: 40px; }
+  
+  .footer-text { margin-block: 15px 30px; }
+  
+  .social-list {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-link {
+    font-size: 25px;
+    transition: var(--transition-1);
+  }
+  
+  .social-link:is(:hover, :focus) { color: var(--maximum-blue-green); }
+  
+  .footer-list-title {
+    font-size: var(--fs-5);
+    font-family: var(--ff-jost);
+    font-weight: var(--fw-700);
+    margin-block-end: 15px;
+  }
+  
+  .footer-link {
+    margin-block-start: 10px;
+    transition: var(--transition-1);
+  }
+  
+  .footer-link:is(:hover, :focus) { color: var(--maximum-blue-green); }
+  
+  .footer-bottom {
+    padding-block: 20px;
+    text-align: center;
+  }
+  
+  .copyright {
+    font-size: var(--fs-6);
+    margin-block-end: 20px;
+  }
+  
+  .footer-bottom .w-100 {
+    max-width: max-content;
+    margin-inline: auto;
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #BACK TO TOP
+  \*-----------------------------------*/
+  
+  .back-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: var(--maximum-blue-green);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: var(--radius-circle);
+    transition: var(--transition-1);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+  }
+  
+  .back-top-btn.active {
+    transform: translateY(10px);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media (min-width: 768px) {
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer-bottom { text-align: left; }
+  
+    .footer-bottom .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .copyright { margin-block-end: 0; }
+  
+    .footer-bottom .w-100 { margin-inline: 0; }
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer-top .container { grid-template-columns: 1fr 0.4fr 0.5fr 0.5fr; }
+  
+    .footer-brand { padding-inline-end: 40px; }
+  
+  }
+  
+  @media (min-width: 1200px) {
+
+    /**
+     * BACK TO TOP
+     */
+  
+    .back-top-btn {
+      bottom: 70px;
+      right: 30px;
+      font-size: 25px;
+      padding: 15px;
+    }
+  
+  }
