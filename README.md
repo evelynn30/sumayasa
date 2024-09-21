@@ -10,6 +10,3 @@ This is a Project School
 - Done
 
 
-## License
-
-
